@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+// ### Headings
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 400, 600
+
+// ### Body
+// - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+// - Weights: 400
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;

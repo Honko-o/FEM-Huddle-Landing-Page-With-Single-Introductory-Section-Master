@@ -1,0 +1,95 @@
+@use '../core/' as *;
+/*
+    10px = 0.625rem
+    32px = 2rem
+    50px = 3.125rem
+    120px = 7.5rem
+    200px = 12.5rem
+*/
+.landing {
+    .landing__header {
+        margin-bottom: 3.125rem;
+    }
+    .landing__logo {
+        width: 7.5rem;
+        margin-bottom: 3.125rem;
+    }
+    .landing__mockups {
+        margin-bottom: 3.125rem;
+    }
+    .landing__body {
+        color: #fff;
+        .register-link {
+            display: block;
+            width: 12.5rem; // 200px
+            margin-bottom: 3.125rem;
+            background: #fff;
+            border-radius: 25px;
+            padding: 0.625rem;
+            box-shadow: 0 1px 5px 1px rgb(0 0 0 / 63%);
+            color: $primary-violet;
+            @include prefixer(transition, all 0.3s, webkit ms mz o);
+            &:hover {
+                background-color: $primary-soft-magenta;
+                color: #fff;
+            }
+        }
+    }
+    .landing__body__header {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+    .landing__body__text {
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+    .landing__footer {
+        ul {
+            @include flex(center);
+            gap: 15px;
+        }
+        li {
+            border: 1px solid;
+            border-color: #fff;
+            border-radius: 50%;
+            width: 2.25rem;
+            height: 2.25rem;
+            position: relative;
+            @include prefixer(transition, all 0.3s, webkit ms mz o);
+            &:hover,
+            &:hover i {
+                border-color: darken($primary-soft-magenta, 20%);
+                color: darken($primary-soft-magenta, 20%);
+            }
+        }
+        a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        i {
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 62px) { // 992px
+    .landing {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .landing__header,
+        .landing__body {
+            flex-basis: 50%;
+        }
+        .landing__footer {
+            flex-basis: 100%;
+            ul {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
