@@ -3,7 +3,7 @@
     10px = 0.625rem
     32px = 2rem
     50px = 3.125rem
-    120px = 7.5rem
+    168px = 7.5rem
     200px = 12.5rem
 */
 .landing {
@@ -11,7 +11,7 @@
         margin-bottom: 3.125rem;
     }
     .landing__logo {
-        width: 7.5rem;
+        width: 10.5rem;
         margin-bottom: 3.125rem;
     }
     .landing__mockups {
@@ -48,6 +48,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            margin-bottom: 50px;
             @include flex(center);
             gap: 15px;
         }
@@ -86,9 +87,11 @@
             flex-wrap: wrap;
             align-items: center;
         }
-        .landing__header,
+        .landing__header {
+            flex-basis: 60%;
+        }
         .landing__body {
-            flex-basis: 40%;
+            flex-basis: 30%;
         }
         .landing__footer {
             flex-basis: 100%;

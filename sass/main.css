@@ -110,14 +110,14 @@ img {
     10px = 0.625rem
     32px = 2rem
     50px = 3.125rem
-    120px = 7.5rem
+    168px = 7.5rem
     200px = 12.5rem
 */
 .landing .landing__header {
   margin-bottom: 3.125rem;
 }
 .landing .landing__logo {
-  width: 7.5rem;
+  width: 10.5rem;
   margin-bottom: 3.125rem;
 }
 .landing .landing__mockups {
@@ -157,6 +157,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -199,9 +200,11 @@ img {
     flex-wrap: wrap;
     align-items: center;
   }
-  .landing .landing__header,
-.landing .landing__body {
-    flex-basis: 40%;
+  .landing .landing__header {
+    flex-basis: 60%;
+  }
+  .landing .landing__body {
+    flex-basis: 30%;
   }
   .landing .landing__footer {
     flex-basis: 100%;

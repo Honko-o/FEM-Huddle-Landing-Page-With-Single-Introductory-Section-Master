@@ -24,7 +24,7 @@ Your users should be able to:
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
 - Challenge [Solution](https://honko-o.github.io/FEM-Huddle-Landing-Page-With-Single-Introductory-Section-Master/)
-- Challenge [Code](https://github.com/Honko-o/FEM-Huddle-Landing-Page-With-Single-Introductory-Section-Master)
+- Code [Code](https://github.com/Honko-o/FEM-Huddle-Landing-Page-With-Single-Introductory-Section-Master)
 
 ## Where to find everything
 
